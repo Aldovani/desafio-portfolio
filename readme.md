@@ -1,6 +1,6 @@
 # Desafio 9 - Portfolio
 
-<img src="./.github/portfolio.svg" width="800px" align="center">
+<img src="./.github/Portfolio.svg" width="800px" align="center">
 
 <br/><br/>
 
@@ -10,6 +10,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 * [html5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [javaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [TailwindCss](https://tailwindcss.com/)
 * [ScrollReveal](https://scrollrevealjs.org/)
 
 <br> 
