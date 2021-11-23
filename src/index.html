@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/myStyles.css" />
+  </head>
+  <body>
+    <div
+      class="m-auto container lg:px-36 px-8 min-h-screen overflow-x-hidden pb-8"
+    >
+      <header class="flex justify-between text-white pt-10 pb-48">
+        <h1 class="text-2xl">Portfolio</h1>
+
+        <nav >
+          <ul
+            data-js="list"
+            class="lg:flex gap-11 w-full text-white text-lg items-center hidden"
+          >
+            <li class="overflow-hidden relative">
+              <a class="link-hover" href="#about">Sobre mim</a>
+            </li>
+            <li class="overflow-hidden relative">
+              <a class="link-hover" href="#projects">Projetos</a>
+            </li>
+            <li class="overflow-hidden relative">
+              <a class="link-hover" href="#services">Serviços</a>
+            </li>
+            <li class="overflow-hidden relative">
+              <a class="link-hover" href="#skills">Minhas skills</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex gap-2 lg:hidden">
+          <div class="lg:hidden block " data-js="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="ai ai-ThreeLineHorizontal"
+            >
+              <path d="M5 6h14M5 12h14M5 18h14" />
+            </svg>
+          </div>
+          <div class="hidden cursor-pointer close" data-js="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="ai ai-CircleX hover:opacity-50 transition-all "
+            >
+              <path d="M15 15L9 9m6 0l-6 6" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex justify-between text-gray-50 mb-36">
+        <div>
+          <h1 class="text-3xl">Olá, eu sou o Aldovani Henrique :&#41;</h1>
+          <p class="text-lg text-gray-300 mt-5 mb-8">Desenvolvedor Front-End</p>
+          <div class="flex gap-4 flex-wrap">
+            <a
+              href="."
+              class="bg-my-green text-black py-3 font-medium px-7 text-sm"
+              >Download CV</a
+            >
+            <a
+              href="#about"
+              class="
+                bg-transparent
+                text-sm
+                py-3
+                px-7
+                font-medium
+                border-solid border-2 border-gray-500
+              "
+              >Entrar em contato</a
+            >
+          </div>
+        </div>
+
+        <img
+          src="assets/illustration.svg"
+          alt=" illustration "
+          width="300"
+          class="lg:block hidden"
+        />
+      </main>
+
+      <section id="about" class="mb-36 pt-8">
+        <h2 class="text-4xl text-center text-purple-50 mb-8">Sobre mim</h2>
+
+        <p class="text-gray-400 max-w-3xl m-auto sm:text-center text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident
+        </p>
+
+        <div
+          class="
+            grid
+            lg:grid-cols-4
+            sm:grid-cols-2
+            grid-cols-1
+            gap-5
+            text-gray-50
+            mt-20
+          "
+        >
+          <div class="flex items-center justify-center flex-col">
+            <div class="p-4 rounded-full icon-color mb-5">
+              <img src="assets/smile.svg" alt="smile" />
+            </div>
+            <h2>Meu nome</h2>
+            <p>Aldovani Henrique</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <div class="p-4 rounded-full icon-color mb-5">
+              <img src="assets/mail.svg" alt="e-mail" />
+            </div>
+            <h2>E-mail</h2>
+            <p>aldovanihcosta.com</p>
+          </div>
+          <div class="flex items-center justify-center flex-col">
+            <div class="p-4 rounded-full icon-color mb-5">
+              <img src="assets/instagram.svg" alt="instagram" />
+            </div>
+            <h2>Instagram</h2>
+            <p>aldovanih</p>
+          </div>
+
+          <div class="flex items-center justify-center flex-col">
+            <div class="p-4 rounded-full icon-color mb-5">
+              <img src="assets/phone.svg" alt="phone" />
+            </div>
+            <h2>Telefone</h2>
+            <p>16 9999-9999</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-36 pt-12" id="projects">
+        <h2 class="text-4xl text-white mb-8 text-center">Projetos</h2>
+        <div
+          class="
+            grid
+            lg:grid-cols-3
+            gap-11
+            sm:grid-cols-1
+            md:grid-cols-2
+            reaveal
+          "
+        >
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+
+          <div class="card bg-card">
+            <div class="w-full h-32 image-project"></div>
+            <h2 class="text-white">Titulo do Projeto</h2>
+            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-36 pt-12" id="services">
+        <h2 class="text-3xl text-center text-white mb-9">Serviços</h2>
+
+        <div
+          class="
+            grid
+            justify-center
+            items-start
+            gap-11
+            grid-cols-1
+            lg:grid-cols-3
+          "
+        >
+          <div class="card-services bg-service" id="sites">
+            <img src="assets/code.svg" alt="code" title="Code"  />
+            <h3 class="text-3xl text-gray-400 mt-10">Criação de sites</h3>
+          </div>
+          <div class="card-services bg-service" id="design">
+            <img src="assets/figma.svg" alt="Figma" title="Figma" />
+            <h3 class="text-3xl text-gray-400 mt-10 text-wrap">UI Designer</h3>
+          </div>
+          <div class="card-services bg-service" id="smartphone">
+            <img src="assets/smartphone.svg" alt="smartphone" title="smartphone" />
+            <h3 class="text-3xl text-gray-400 mt-10">Sites responsivos</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-36" id="skills">
+        <h2 class="text-center text-4xl text-white mb-8">Minhas Skills</h2>
+        <div class="flex gap-14 flex-wrap justify-evenly">
+          <div class="bg-skills card-skill">
+            <img src="assets/html.svg" alt="html" title="html5" />
+            <p class="absolute bottom-0 text-white">HTML5</p>
+          </div>
+          <div class="bg-skills card-skill">
+            <img src="assets/css3.svg" alt="css3"  title="CSS3"/>
+            <p class="absolute bottom-0 text-white">CSS3</p>
+          </div>
+          <div class="bg-skills card-skill">
+            <img src="assets/javascript.svg" alt="javascript" title="javaScript" />
+            <p class="absolute bottom-0 text-white">JavaScript</p>
+          </div>
+          <div class="bg-skills card-skill">
+            <img src="assets/react.svg" alt="react"  title="react"/>
+
+            <p class="absolute bottom-0 text-white">React</p>
+          </div>
+          <div class="bg-skills card-skill">
+            <img src="assets/nextjs.svg" alt="nextJs" title="nextJs" />
+            <p class="absolute bottom-0 text-white">NextJs</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="flex items-center justify-center bg-footer text-center">
+      <p class="text-white py-5">
+        Orgulhosamente feito por
+        <span class="text-my-green"> Aldovani Henrique</span>
+      </p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

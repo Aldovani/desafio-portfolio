@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #171717;
+  min-height: 100vh;
+}
+
+.icon-color {
+  background-color: #333333;
+}
+.bg-card {
+  background: #212121;
+  border: 1px solid #333333;
+}
+.bg-card .image-project {
+  background: #171717;
+}
+.bg-service {
+  background-color: #212121;
+  border-bottom: #00df5e solid 5px;
+}
+.bg-skills {
+  background: #212121;
+  border: 1px solid #333333;
+  border-radius: 8px;
+}
+.bg-skills p {
+  visibility: hidden;
+  color: #00df5e;
+  transition: all 0.1s;
+}
+
+.bg-skills img:hover + p {
+  visibility: visible;
+}
+.bg-footer {
+  background-color: #212121;
+}
+
+.active ul {
+  position: fixed;z-index: 999;
+  background: #212121;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.link-hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  height: 2px;
+  width: 100%;
+  background: #00df5e;
+  transition: all 1s;
+
+  transform-origin: left;
+}
+.link-hover:hover::after {
+  transform: translate(100%, 0);
+}
+
+.active +div .close{
+  display: block;
+  position: fixed;
+  top:30px;
+  z-index:  999;;
+  right: 30px;
+}
