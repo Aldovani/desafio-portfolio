@@ -4,7 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "my-green":"#00DF5E"
+        "primary": "#00DF5E",
+        "second": "#333",
+        "tertiary": "#212121",
+        "quaternary": "#171717",
+        "gray": "#828282",
+        "white": "#F9F9F9",
+        
       }
     },
   },

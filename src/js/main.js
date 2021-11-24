@@ -44,3 +44,10 @@ ScrollReveal().reveal("#services #smartphone", {
   easing: "ease",
   scale: 2,
 });
+
+
+ScrollReveal().reveal("#skills div ", {duration:900,
+  distance: "50px",
+  origin: "top",
+  easing: "ease-out",
+ })

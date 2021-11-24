@@ -4,10 +4,13 @@
   @apply flex gap-2 flex-col  items-start py-5 px-6;
 }
 .card-services{
-  @apply h-full  flex flex-col items-start p-8 justify-center
+  @apply h-full  flex flex-col items-start p-8 justify-between
 }
 .card-skill{
   @apply p-9 flex items-center justify-center relative
+}
+.item-about{
+  @apply flex items-center justify-center flex-col
 }
 
 @tailwind components;

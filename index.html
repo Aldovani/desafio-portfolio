@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/myStyles.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/myStyles.css" />
   </head>
   <body>
     <div
@@ -21,7 +21,7 @@
       <header class="flex justify-between text-white pt-10 pb-48">
         <h1 class="text-2xl">Portfolio</h1>
 
-        <nav >
+        <nav>
           <ul
             data-js="list"
             class="lg:flex gap-11 w-full text-white text-lg items-center hidden"
@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <div class="flex gap-2 lg:hidden">
-          <div class="lg:hidden block " data-js="hamburger">
+          <div class="lg:hidden block" data-js="hamburger">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -68,7 +68,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="ai ai-CircleX hover:opacity-50 transition-all "
+              class="ai ai-CircleX hover:opacity-50 transition-all"
             >
               <path d="M15 15L9 9m6 0l-6 6" />
               <circle cx="12" cy="12" r="10" />
@@ -77,25 +77,36 @@
         </div>
       </header>
 
-      <main class="flex justify-between text-gray-50 mb-36">
+      <main class="flex justify-between text-white mb-36">
         <div>
           <h1 class="text-3xl">Olá, eu sou o Aldovani Henrique :&#41;</h1>
-          <p class="text-lg text-gray-300 mt-5 mb-8">Desenvolvedor Front-End</p>
-          <div class="flex gap-4 flex-wrap">
+          <p class="text-lg text-gray mt-5 mb-8">Desenvolvedor Front-End</p>
+          <div class="flex gap-4 flex-wrap items-center">
             <a
               href="."
-              class="bg-my-green text-black py-3 font-medium px-7 text-sm"
+              class="bg-primary 
+              text-black
+              py-3 
+              px-7
+              font-medium 
+              text-sm
+              hover:opacity-40
+              transition-all
+              "
               >Download CV</a
             >
             <a
               href="#about"
               class="
                 bg-transparent
+                border-tertiary
                 text-sm
                 py-3
                 px-7
                 font-medium
                 border-solid border-2 border-gray-500
+                hover:bg-tertiary
+                transition-all
               "
               >Entrar em contato</a
             >
@@ -103,7 +114,7 @@
         </div>
 
         <img
-          src="assets/illustration.svg"
+          src="src/assets/illustration.svg"
           alt=" illustration "
           width="300"
           class="lg:block hidden"
@@ -111,9 +122,9 @@
       </main>
 
       <section id="about" class="mb-36 pt-8">
-        <h2 class="text-4xl text-center text-purple-50 mb-8">Sobre mim</h2>
+        <h2 class="text-4xl text-center text-white mb-8">Sobre mim</h2>
 
-        <p class="text-gray-400 max-w-3xl m-auto sm:text-center text-justify">
+        <p class="text-gray max-w-3xl m-auto sm:text-center text-justify">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -133,34 +144,34 @@
             mt-20
           "
         >
-          <div class="flex items-center justify-center flex-col">
+          <div class="item-about">
             <div class="p-4 rounded-full icon-color mb-5">
-              <img src="assets/smile.svg" alt="smile" />
+              <img src="src/assets/smile.svg" alt="smile" />
             </div>
-            <h2>Meu nome</h2>
-            <p>Aldovani Henrique</p>
+            <h2 class="text-white">Meu nome</h2>
+            <p class="text-gray">Aldovani Henrique</p>
           </div>
-          <div class="flex items-center justify-center flex-col">
+          <div class="item-about">
             <div class="p-4 rounded-full icon-color mb-5">
-              <img src="assets/mail.svg" alt="e-mail" />
+              <img src="src/assets/mail.svg" alt="e-mail" />
             </div>
-            <h2>E-mail</h2>
-            <p>aldovanihcosta.com</p>
+            <h2 class="text-white">E-mail</h2>
+            <p class="text-gray">aldovanihcosta.com</p>
           </div>
-          <div class="flex items-center justify-center flex-col">
+          <div class="item-about">
             <div class="p-4 rounded-full icon-color mb-5">
-              <img src="assets/instagram.svg" alt="instagram" />
+              <img src="src/assets/instagram.svg" alt="instagram" />
             </div>
-            <h2>Instagram</h2>
-            <p>aldovanih</p>
+            <h2 class="text-white">Instagram</h2>
+            <p class="text-gray">aldovanih</p>
           </div>
 
-          <div class="flex items-center justify-center flex-col">
+          <div class="item-about">
             <div class="p-4 rounded-full icon-color mb-5">
-              <img src="assets/phone.svg" alt="phone" />
+              <img src="src/assets/phone.svg" alt="phone" />
             </div>
-            <h2>Telefone</h2>
-            <p>16 9999-9999</p>
+            <h2 class="text-white">Telefone</h2>
+            <p class="text-gray">16 9999-9999</p>
           </div>
         </div>
       </section>
@@ -180,37 +191,37 @@
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
 
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
 
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
 
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
 
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
 
           <div class="card bg-card">
             <div class="w-full h-32 image-project"></div>
             <h2 class="text-white">Titulo do Projeto</h2>
-            <p class="text-white">Tecnologias: HTML, CSS e JS.</p>
+            <p class="text-gray">Tecnologias: HTML, CSS e JS.</p>
           </div>
         </div>
       </section>
@@ -229,16 +240,16 @@
           "
         >
           <div class="card-services bg-service" id="sites">
-            <img src="assets/code.svg" alt="code" title="Code"  />
-            <h3 class="text-3xl text-gray-400 mt-10">Criação de sites</h3>
+            <img src="src/assets/code.svg" alt="code" title="Code" />
+            <h3 class="text-3xl text-gray mt-10">Criação de sites</h3>
           </div>
           <div class="card-services bg-service" id="design">
-            <img src="assets/figma.svg" alt="Figma" title="Figma" />
-            <h3 class="text-3xl text-gray-400 mt-10 text-wrap">UI Designer</h3>
+            <img src="src/assets/figma.svg" alt="Figma" title="Figma" />
+            <h3 class="text-3xl text-gray mt-10">UI Designer</h3>
           </div>
           <div class="card-services bg-service" id="smartphone">
-            <img src="assets/smartphone.svg" alt="smartphone" title="smartphone" />
-            <h3 class="text-3xl text-gray-400 mt-10">Sites responsivos</h3>
+            <img src="src/assets/smartphone.svg"alt="smartphone"title="smartphone"/>
+            <h3 class="text-3xl text-gray mt-10">Sites responsivos</h3>
           </div>
         </div>
       </section>
@@ -247,24 +258,28 @@
         <h2 class="text-center text-4xl text-white mb-8">Minhas Skills</h2>
         <div class="flex gap-14 flex-wrap justify-evenly">
           <div class="bg-skills card-skill">
-            <img src="assets/html.svg" alt="html" title="html5" />
+            <img src="src/assets/html.svg" alt="html" title="html5" />
             <p class="absolute bottom-0 text-white">HTML5</p>
           </div>
           <div class="bg-skills card-skill">
-            <img src="assets/css3.svg" alt="css3"  title="CSS3"/>
+            <img src="src/assets/css3.svg" alt="css3" title="CSS3" />
             <p class="absolute bottom-0 text-white">CSS3</p>
           </div>
           <div class="bg-skills card-skill">
-            <img src="assets/javascript.svg" alt="javascript" title="javaScript" />
+            <img
+              src="src/assets/javascript.svg"
+              alt="javascript"
+              title="javaScript"
+            />
             <p class="absolute bottom-0 text-white">JavaScript</p>
           </div>
           <div class="bg-skills card-skill">
-            <img src="assets/react.svg" alt="react"  title="react"/>
+            <img src="src/assets/react.svg" alt="react" title="react" />
 
             <p class="absolute bottom-0 text-white">React</p>
           </div>
           <div class="bg-skills card-skill">
-            <img src="assets/nextjs.svg" alt="nextJs" title="nextJs" />
+            <img src="src/assets/nextjs.svg" alt="nextJs" title="nextJs" />
             <p class="absolute bottom-0 text-white">NextJs</p>
           </div>
         </div>
@@ -274,11 +289,12 @@
     <footer class="flex items-center justify-center bg-footer text-center">
       <p class="text-white py-5">
         Orgulhosamente feito por
-        <span class="text-my-green"> Aldovani Henrique</span>
+        <span class="text-primary"> Aldovani Henrique</span>
       </p>
     </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/main.js"></script>
+
   </body>
 </html>
